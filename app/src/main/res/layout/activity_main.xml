@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+<TextView
+    android:id="@+id/register"
+    app:layout_constraintTop_toTopOf="parent"
+    android:textSize="35sp"
+    android:text="Register"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@drawable/ic_register_strelka"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_sova"
+        app:layout_constraintBottom_toTopOf="@id/text_trivia"
+        app:layout_constraintEnd_toEndOf="@id/text_trivia"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@id/text_trivia" />
+
+
+    <ImageView
+
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="#4CAF50"
+        android:src="@drawable/ic_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="@+id/button_next"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_strelka"
+        app:layout_constraintBottom_toBottomOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="@+id/button_next"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.947" />
+    <com.google.android.material.button.MaterialButton
+        android:drawableEnd="@drawable/ic_circle"
+        app:cornerRadius="24dp"
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/white"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:text="Username"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/edit_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit_username"
+    android:layout_width="150dp"
+    android:layout_height="28dp"/>
+    <TextView
+        android:text="Email"
+        android:layout_marginTop="38dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/edit_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit_username"
+        android:layout_width="150dp"
+        android:layout_height="28dp"/>
+    <TextView
+        android:text="Password"
+        android:layout_marginTop="76dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/edit_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit_username"
+        android:layout_width="150dp"
+        android:layout_height="28dp"/>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_username"
+        app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+
+
+
+    <TextView
+        android:id="@+id/text_trivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:text="Trivia"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
